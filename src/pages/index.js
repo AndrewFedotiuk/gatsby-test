@@ -7,7 +7,6 @@ import Header from '../components/theme/Header'
 
 const IndexPage = () => (
 	<Layout>
-		<React.Fragment>
 			<SEO title="welcome" />
 			<Header />
 			<Welcome as={Container}>
@@ -15,7 +14,6 @@ const IndexPage = () => (
 					<FormattedMessage id="welcome" />
 				</h2>
 			</Welcome>
-		</React.Fragment>
 	</Layout>
 )
 
