@@ -8,9 +8,10 @@ module.exports = {
 		'gatsby-plugin-sass',
 		'gatsby-plugin-catch-links',
 		{
-			resolve: 'gatsby-plugin-canonical-urls',
+			resolve: `gatsby-plugin-canonical-urls`,
 			options: {
-				siteUrl: '/'
+				siteUrl: '/',
+				stripQueryString: true,
 			}
 		},
 		{

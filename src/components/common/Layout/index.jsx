@@ -6,7 +6,7 @@ import localEng from '../../../../data/en.json'
 import localRu from '../../../../data/ru.json'
 import { Context } from '../Context'
 import Provider from './Provider'
-import './layout.css'
+import './layout.scss'
 
 addLocaleData([...en, ...ru])
 
