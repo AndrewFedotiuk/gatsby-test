@@ -1,37 +1,28 @@
-const config = require('./data/config');
 
 module.exports = {
 	siteMetadata: {
-		site_url: config.url
+		site_url: '/'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
-		'gatsby-plugin-styled-components',
-		'gatsby-plugin-netlify',
+		'gatsby-plugin-sass',
 		'gatsby-plugin-catch-links',
-		{
-			resolve: 'gatsby-plugin-google-fonts',
-			options: {
-				fonts: ['Cairo', 'Roboto']
-			}
-		},
 		{
 			resolve: 'gatsby-plugin-canonical-urls',
 			options: {
-				siteUrl: config.url
+				siteUrl: '/'
 			}
 		},
 		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
-				trackingId: config.googleAnalyticsID,
+				trackingId: '',
 				head: true
 			}
 		},
 		{
 			resolve: 'gatsby-plugin-nprogress',
 			options: {
-				color: config.themeColor,
 				showSpinner: false
 			}
 		},
@@ -41,8 +32,6 @@ module.exports = {
 				name: 'Gatsby',
 				short_name: 'Gatsby',
 				start_url: '/',
-				background_color: config.backgroundColor,
-				theme_color: config.themeColor,
 				display: 'minimal-ui',
 				icons: [
 					{
@@ -58,6 +47,5 @@ module.exports = {
 				]
 			}
 		}
-		// 'gatsby-plugin-offline'
 	]
 };
