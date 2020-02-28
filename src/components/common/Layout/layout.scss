@@ -5,11 +5,14 @@
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid";
 
+@import '../../../styles/vars.scss';
+
+
 body {
-  background-color: #f4dddb;
+  background-color: $bg-color;
 }
 
 p {
-  font-size: 22px;
+  font-size: $base-font-size;
   margin-bottom: 30px;
 }

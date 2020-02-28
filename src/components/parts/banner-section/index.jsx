@@ -14,7 +14,9 @@ const BannerSection = () => (
 
         <div className="container">
             <div className="row">
-                <div className="col-md-7 offset-md-2">
+                <p className="col-3 logo">WAS</p>
+                <div className="col-md-7">
+
                     <p>
                         <FormattedHTMLMessage id="bannerSectionText1" />
                     </p>
