@@ -1,16 +1,18 @@
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 import { Layout } from '../components/common'
-import SEO from '../components/common/SEO'
-import Header from '../components/theme/Header'
+import BannerSection from '../components/parts/banner-section'
+// import SEO from '../components/common/SEO'
+// import Header from '../components/theme/Header'
+// <SEO title="welcome" />
+// 	<Header />
 
+// <section className='banner'>
+// 	<FormattedMessage id="welcome" />
+// </section>
 const IndexPage = () => (
 	<Layout>
-	<SEO title="welcome" />
-		<Header />
-		<h2>
-			<FormattedMessage id="welcome" />
-		</h2>
+		<BannerSection/>
 	</Layout>
 )
 

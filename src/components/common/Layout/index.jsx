@@ -8,11 +8,11 @@ import { Context } from '../Context'
 import Provider from './Provider'
 import './layout.scss'
 
-addLocaleData([...en, ...ru])
+addLocaleData([ ...ru, ...en])
 
 const messages = {
-	en: localEng,
-	ru: localRu
+	ru: localRu,
+	en: localEng
 }
 
 const Layout = ({ children }) => (
