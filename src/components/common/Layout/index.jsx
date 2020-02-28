@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import en from 'react-intl/locale-data/en'
 import ru from 'react-intl/locale-data/ru'
 import { addLocaleData, IntlProvider } from 'react-intl'
@@ -8,7 +9,7 @@ import { Context } from '../Context'
 import Provider from './Provider'
 import './layout.scss'
 
-addLocaleData([ ...ru, ...en])
+addLocaleData([...ru, ...en])
 
 const messages = {
 	ru: localRu,
@@ -17,6 +18,9 @@ const messages = {
 
 const Layout = ({ children }) => (
 	<Provider>
+		<Helmet>
+			<link rel='stylesheet' href='https://use.typekit.net/hkx6ahs.css' />
+		</Helmet>
 		<Context.Consumer>
 			{({ lang }) => (
 				<IntlProvider locale={lang} messages={messages[lang]}>

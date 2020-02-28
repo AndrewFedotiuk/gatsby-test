@@ -10,6 +10,9 @@ const SEO = ({ location = '', title, intl: { formatMessage } }) => (
 				<Helmet>
 					<html lang={lang} dir={lang === 'en' ? 'en' : 'ru'} />
 					<link rel="canonical" href={`/${lang}`} />
+
+					<link rel='stylesheet' href='https://use.typekit.net/hkx6ahs.css' />
+					
 					<meta property="og:url" content={`/${location}`} />
 					<title>
 						{formatMessage({ id: title })}
