@@ -1,7 +1,7 @@
 .song-section1 {
   position: relative;
   .poem {
-    margin: 80px 70px;
+    margin: 40px 70px 80px;
   }
   .image-wrapper {
     display: flex;
@@ -20,5 +20,8 @@
     top: -100px;
     right: -70px;
     width: 650px;
+  }
+  .youtube-iframe{
+    margin-bottom: 20px;
   }
 }
